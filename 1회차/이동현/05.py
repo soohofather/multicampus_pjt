@@ -5,22 +5,21 @@ from pprint import pprint
 def movie_info(movie, genres):
     pass 
     # 여기에 코드를 작성합니다.  
-a = open('./data/movie.json', 'r', encoding='utf-8')
-b = open('./data/genres.json', 'r', encoding='utf-8')
 
-m = json.load(a)
-n = json.load(b)
+    a = movie['genre_ids']          # a = [18, 80]
+    b = []
+    for bb in genres:
+        if bb['id'] in a:
+            b.append(bb['name'])    # b 에다가 장르 '키값' 중에 a에 있는 것을 추가함. a = [18, 80]에서 b = ['Crime', 'Drama']로 바뀜
 
-finding = ['id', 'title', 'vote_average', 'overview', 'genre_ids']
-dict = {}
-
-for mm in m:
-    if mm in finding:
-       dict[mm] = dict.get(mm, m[mm])
-
-
-
-pprint(dict)
+    c = {
+        'genre_names': b,
+        'id': movie['id'],
+        'overview': movie['overview'],
+        'title': movie['title'],
+        'vote_average': movie['vote_average'],
+    }
+    return c
 
 # 아래의 코드는 수정하지 않습니다.
 if __name__ == '__main__':
