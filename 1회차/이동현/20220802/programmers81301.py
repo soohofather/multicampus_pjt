@@ -10,4 +10,4 @@ def solution(s):
 
     return answer
     
-print(solution('123'))
+print(solution('one4seveneight'))
