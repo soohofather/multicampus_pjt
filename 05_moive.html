@@ -9,6 +9,7 @@
     <title>movie</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 </head>
 
@@ -84,7 +85,7 @@
         <div class="container mx-1">
             <h1 class="fw-bolder">Lorem, ipsum.</h1>
             <p class="text-secondary">
-                <span>평점 9.88</span>
+                <span>평점 <span class="text-warning">★★★★★</span></span>
                 <span>·</span>
                 <span>드라마</span>
                 <span>·</span>
@@ -92,8 +93,19 @@
                 <span>·</span>
                 <span>15세</span>
             </p>
-            <div>
-                <span class="glyphicon glyphicon-share-alt"></span>
+            <div class="d-flex">
+                <div class="text-center me-4 my-3">
+                    <a class="py-1 btn border-white btn-lg" href="">
+                        <span class="display-3 glyphicon glyphicon-share-alt"></span>
+                        <p class="fs-4">Share</p>
+                    </a>
+                </div>
+                <div class="text-center me-4 my-3">
+                    <a class="py-1 btn border-white btn-lg" href="">
+                        <span class="display-3 glyphicon glyphicon-heart"></span>
+                        <p class="fs-4">Like</p>
+                    </a>
+                </div>
             </div>
             <p class="text-secondary">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, doloribus?"</p>
             <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi? Minus ad, quod omnis quidem officia sint modi totam illo, facere sit accusamus repellendus magnam dicta temporibus distinctio consequuntur adipisci similique molestiae dolores accusantium sunt, veniam iusto pariatur! Asperiores incidunt corporis perspiciatis illum, quos nemo nisi veniam aspernatur facilis? Vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sed, impedit dolores ratione eius quis sint corporis voluptatum earum porro maiores cumque repudiandae soluta tempore explicabo quaerat saepe ipsa aliquam tenetur magni. Pariatur nobis doloribus aliquam ratione, ea sunt cumque numquam fuga asperiores. Autem adipisci et eius dolor inventore magni.</p>
@@ -152,7 +164,11 @@
                                 <span>정보</span>
                             </th>
                             <td>
-                                <span>주제 : 다소 높음 / 선정성 : 다소 높음 / 폭력성 : 다소 높음 / 공포 : 보통 / 약물 : 보통 / 대사 : 다소 높음 / 모방위험 : 다소 높음</span></td></tr></tbody></table>
+                                <span>주제 : 다소 높음 / 선정성 : 다소 높음 / 폭력성 : 다소 높음 / 공포 : 보통 / 약물 : 보통 / 대사 : 다소 높음 / 모방위험 : 다소 높음</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>
@@ -275,8 +291,6 @@
             <p>Web-bootstrap PJT, by DH, KP</p>
         </div>
     </footer>
-    <script src = "http://cdn.static.w3big.com/libs/jquery/2.1.1/jquery.min.js"></script> 
-
 </body>
 </html>
  
